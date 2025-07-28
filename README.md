@@ -2,6 +2,14 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
 
+## Package Installation
+
+To install packages run (--force because of the different versions between Angular 20 and Ngrx 19):
+
+```bash
+npm install --force
+```
+
 ## Development server
 
 To start a local development server, run:
