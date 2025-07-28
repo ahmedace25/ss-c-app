@@ -1,0 +1,25 @@
+.edit-icon {
+    flex-grow: 1;
+    justify-content: end;
+    display: flex;
+}
+
+.mat-mdc-card-header {
+    gap: 10px;
+}
+.bookmarks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .bookmark-card {
+        display: flex;
+        .bookmark {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.search-container {
+    display: flex;
+}

@@ -1,0 +1,30 @@
+<mat-card class="add-card">
+    <mat-card-header class="add-card-header">
+        <mat-card-title-group>
+            <mat-card-title>Create New Bookmark</mat-card-title>
+            <mat-card-subtitle>Enter bookmark name and url</mat-card-subtitle>
+        </mat-card-title-group>
+        <mat-icon>bookmark_outline</mat-icon>
+    </mat-card-header>
+    <mat-card-content class="add-card-content">
+        <form [formGroup]="bookmarkForm" class="bookmark-form">
+            <mat-form-field appearance="outline" class="name-field">
+                <mat-label>Bookmark Name</mat-label>
+                <input matInput type="text" [formControl]="bookmarkForm.controls.name">
+                <mat-error>Field is Required</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="url-field">
+                <mat-label>Bookmark URL</mat-label>
+                <input matInput type="text" [formControl]="bookmarkForm.controls.url">
+                <mat-error>Field is Required</mat-error>
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions class="add-card-actions">
+        <button 
+            matButton="filled"
+            (click)="addBookmark()"
+            [disabled]="!bookmarkForm.valid"
+            >Create Bookmark</button>
+    </mat-card-actions>
+</mat-card>

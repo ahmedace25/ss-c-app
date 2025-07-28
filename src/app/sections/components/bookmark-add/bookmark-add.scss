@@ -1,0 +1,19 @@
+.add-card {
+    gap: 20px;
+    .add-card-content {
+        .bookmark-form {
+            display: flex;
+            gap: 1rem;
+            .name-field {
+                width: 33%;
+            }
+
+            .url-field {
+                width: 66%;
+            }
+        }
+    }
+    .add-card-actions {
+        justify-content: flex-end;
+    }
+}

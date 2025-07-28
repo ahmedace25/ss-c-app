@@ -1,0 +1,10 @@
+<mat-toolbar>
+    <span routerLink="/bookmarks" class="home-link">Bookmarks</span>
+    <span class="spacer"></span>
+    @if (currentPath() !== 'add-bookmark') {
+        <button matButton="filled" routerLink="/add-bookmark">
+            <mat-icon>add</mat-icon>
+            Add Bookmark
+        </button>
+    }
+</mat-toolbar>
